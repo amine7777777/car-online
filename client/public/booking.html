@@ -1,76 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="styles/global.css">
-    <link rel="stylesheet" href="styles/booking.css">
+    
+    <link rel="stylesheet" href="styles/booking.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>booking</title>
   </head>
 
   <body>
-    
-    <nav>
-      <img
-        src="https://images.unsplash.com/photo-1496449903678-68ddcb189a24?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG91ciUyMHNpdGV8ZW58MHx8MHx8fDA%3D"
-        alt=""
-      />
-      <ul>
-        <li><a href="index.html">home</a></li>
-        <li><a href="cars.html">cars</a></li>
-        <li><a href="booking.html">booking</a></li>
-        <li><a href="contact.html">contact</a></li>
-        <li><a href="">login</a></li>
-      </ul>
-    </nav>
-    <header>
-      <h1>Book your car now</h1>
-      <img src="data:image/jpeg;base64,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" alt="" />
-
-      <h2>to book you must complete :</h2>
-    </header>
-    <form action="">
-      <!-- Nom complet -->
-      <label for="Nom complet"> Nom complet :</label>
-      <input type="text" name="name" id="" placeholder="Nom complet" /><br />
-      <!-- Email -->
-      <label for="email">email:</label>
-      <input type="email" name="" id="" placeholder="your email" /><br />
-      <!-- Téléphone -->
-      <label for="telephone">telephone:</label>
-      <input type="text" name="telephone" id="" placeholder="telephone" /><br />
-      <!-- Date de réservation -->
-      <label for="reservationDate">Date de réservation :</label>
-      <input
-        type="date"
-        name="reservationDate"
-        id="reservationDate"
-        placeholder="reservationDate"
-      /><br />
-      <!-- Heure de réservation -->
-      <label for="heure de reservation">heure de reservation</label>
-      <input type="time" id="reservationTime" name="reservationTime" />/><br />
-      <label for="combien de jours">combien de jours :</label>
-      <input
-        type="number"
-        name="name"
-        id=""
-        placeholder="nombre de jours"
-      /><br />
-
-      <label for="guests">Nombre de passagers :</label>
-      <select id="guests" name="guests" required>
-        <option value="1">1 personne</option>
-        <option value="2">2 personnes</option>
-        <option value="3">3 personnes</option>
-        <option value="4">4 personnes</option>
-        <option value="5">5 personnes</option>
-      </select>
-      <button type="submit">envoyer</button>
-    </form>
-    <footer>
-      <p>&#169;2024 car rental service.All rights reserved.</p>
-    </footer>
-  </body>
+  </header>
+  <nav class="navbar">
+    <div class="container">
   
-</html>
+      <div class="navbar-header">
+        <button class="navbar-toggler" data-toggle="open-navbar1">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <a href="#">
+          <h4>car-<span>rental</span></h4>
+        </a>
+      </div>
+  
+      <div class="navbar-menu" id="open-navbar1">
+        <ul class="navbar-nav">
+          <li class="active"><a href="#">booking</a></li>
+          <li class="navbar-dropdown">
+            <a href="index.html" class="dropdown-toggler" data-dropdown="my-dropdown-id">
+              home <i class="fa fa-angle-down"></i>
+            </a>
+            <ul class="dropdown" id="my-dropdown-id">
+              <li><a href="#">Contact</a></li>
+              <li class="separator"></li>
+              <li><a href="#">cars</a></li>
+              <li class="separator"></li>
+            
+            </ul>
+          </li>
+       
+          
+          <li><a href="cars.html">cars</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">Sign-in</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>            
+</div>
+<body class="bg-body-tertiary">
+  <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+    <symbol id="check2" viewBox="0 0 16 16">
+      <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"></path>
+    </symbol>
+    <symbol id="circle-half" viewBox="0 0 16 16">
+      <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"></path>
+    </symbol>
+    <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+      <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"></path>
+      <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"></path>
+    </symbol>
+    <symbol id="sun-fill" viewBox="0 0 16 16">
+      <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
+    </symbol>
+  </svg>
+
+  <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+    <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (light)">
+      <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+      <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="light" aria-pressed="true">
+          <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+          Light
+          <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+        </button>
+      </li>
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+          <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+          Dark
+          <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+        </button>
+      </li>
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+          <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#circle-half"></use></svg>
+          Auto
+          <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  
+<div class="container">
+<main>
+  <div class="py-5 text-center">
+    <img class="d-block mx-auto mb-4" src="https://img.freepik.com/free-vector/transport-renting-app-illustration_335657-438.jpg?ga=GA1.1.1996820762.1727525217&semt=ais_hybrid" alt="" width="72" height="57">
+    <h2>some information</h2>
+    <p class="lead">can you please answer for this and thank you</p>
+  </div>
+
+  <div class="row g-5">
+    <div class="col-md-5 col-lg-4 order-md-last">
+      <h4 class="d-flex justify-content-between align-items-center mb-3">
+        
+      </h4>
+      
+        </div>
+      </form>
+    </div>
+    <div class="col-md-7 col-lg-8">
+      <h4 class="mb-3">Billing address</h4>
+      <form class="needs-validation" novalidate="">
+        <div class="row g-3">
+          <div class="col-sm-6">
+            <label for="firstName" class="form-label">First name</label>
+            <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+            <div class="invalid-feedback">
+              Valid first name is required.
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <label for="lastName" class="form-label">Last name</label>
+            <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+            <div class="invalid-feedback">
+              Valid last name is required.
+            </div>
+          </div>
+
+          <div class="col-12">
+            <label for="username" class="form-label">Username</label>
+            <div class="input-group has-validation">
+              <span class="input-group-text">@</span>
+              <input type="text" class="form-control" id="username" placeholder="Username" required="">
+            <div class="invalid-feedback">
+                Your username is required.
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <label for="email" class="form-label">Email <span class="text-body-secondary">(Optional)</span></label>
+            <input type="email" class="form-control" id="email" placeholder="you@example.com">
+            <div class="invalid-feedback">
+              Please enter a valid email address for shipping updates.
+            </div>
+          </div>
+
+          <div class="col-12">
+            <label for="address" class="form-label">Address</label>
+            <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
+            <div class="invalid-feedback">
+              Please enter your shipping address.
+            </div>
+          </div>
+
+          <div class="col-12">
+            <label for="address2" class="form-label">Address 2 <span class="text-body-secondary">(Optional)</span></label>
+            <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+          </div>
+
+          <div class="col-md-5">
+            <label for="country" class="form-label">Country</label>
+            <select class="form-select" id="country" required="">
+              <option value="">Choose...</option>
+              <option>United States</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid country.
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <label for="state" class="form-label">State</label>
+            <select class="form-select" id="state" required="">
+              <option value="">Choose...</option>
+              <option>California</option>
+            </select>
+            <div class="invalid-feedback">
+              Please provide a valid state.
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <label for="zip" class="form-label">Zip</label>
+            <input type="text" class="form-control" id="zip" placeholder="" required="">
+            <div class="invalid-feedback">
+              Zip code required.
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-4">
+
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="same-address">
+          <label class="form-check-label" for="same-address">Shipping address is the same as my billing address</label>
+        </div>
+
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="save-info">
+          <label class="form-check-label" for="save-info">Save this information for next time</label>
+        </div>
+
+        <hr class="my-4">
+
+        <h4 class="mb-3">Payment</h4>
+
+        <div class="my-3">
+          <div class="form-check">
+            <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked="" required="">
+            <label class="form-check-label" for="credit">Credit card</label>
+          </div>
+          <div class="form-check">
+            <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required="">
+            <label class="form-check-label" for="debit">Debit card</label>
+          </div>
+          <div class="form-check">
+            <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required="">
+            <label class="form-check-label" for="paypal">PayPal</label>
+          </div>
+        </div>
+
+        <div class="row gy-3">
+          <div class="col-md-6">
+            <label for="cc-name" class="form-label">Name on card</label>
+            <input type="text" class="form-control" id="cc-name" placeholder="" required="">
+            <small class="text-body-secondary">Full name as displayed on card</small>
+            <div class="invalid-feedback">
+              Name on card is required
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <label for="cc-number" class="form-label">Credit card number</label>
+            <input type="text" class="form-control" id="cc-number" placeholder="" required="">
+            <div class="invalid-feedback">
+              Credit card number is required
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <label for="cc-expiration" class="form-label">Expiration</label>
+            <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
+            <div class="invalid-feedback">
+              Expiration date required
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <label for="cc-cvv" class="form-label">CVV</label>
+            <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
+            <div class="invalid-feedback">
+              Security code required
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-4">
+
+        <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
+      </form>
+    </div>
+  </div>
+</main>
+
+<footer class="my-5 pt-5 text-body-secondary text-center text-small">
+  <p class="mb-1">© 2024 Company Name</p>
+  <ul class="list-inline">
+    <li class="list-inline-item"><a href="#">Privacy</a></li>
+    <li class="list-inline-item"><a href="#">Terms</a></li>
+    <li class="list-inline-item"><a href="#">Support</a></li>
+  </ul>
+</footer>
+</div>
+<script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <script src="checkout.js"></script>
+
+</body>
+
+
+
+
+
+
+  </body>
+
+  
+  
+       

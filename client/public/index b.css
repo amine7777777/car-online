@@ -203,3 +203,7 @@ a {
     font-size: 1.05rem;
   }
 }
+.img {
+  width: 100%;
+  height: auto;
+}
