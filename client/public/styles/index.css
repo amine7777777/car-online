@@ -1,3 +1,23 @@
+header {
+  position: relative;
+  display: grid;
+  place-content: center;
+  height: 50vh;
+  overflow: hidden;
+}
+#header-content {
+  width: 50%;
+  background: rgba(0, 0, 0, 0.5);
+}
+#hero-img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+  background-size: cover;
+}
 .card-img-top {
   height: 200px;
   width: 300px;
